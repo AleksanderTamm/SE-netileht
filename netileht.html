@@ -3,6 +3,19 @@
 <head>
 <title>IT 2020</title>
 <style> 
+    html {
+        scroll-behavior: smooth;
+    }
+    div.scroll { 
+        margin:4px, 4px; 
+        padding:4px; 
+        background-color: green; 
+        width: 500px; 
+        height: 110px; 
+        overflow-x: hidden; 
+        overflow-y: auto; 
+        text-align:justify;
+    }
     .head1 { 
         font-size:40px; 
         color:navy; 
@@ -14,7 +27,11 @@
         margin-bottom:15px; 
     } 
     body { 
-        margin: 0 auto; 
+        margin: auto;
+        /* margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: 160px ;  */
         background-position:center; 
         background-size: contain; 
     } 
@@ -22,7 +39,8 @@
     .menu {    
         position: sticky; 
         top: 0; 
-        background-color: #a49cf0; 
+        background-color: #cccccc;
+        background-image: linear-gradient(navy, blue); 
         padding:10px 0px 10px 0px; 
         color:white; 
         margin: 0 auto; 
@@ -42,14 +60,15 @@
     } 
     .sidenav {
         height:auto;
+        margin-top: auto;
         width: 160px; 
         position: fixed; 
-        z-index: 1;
-        top: 152px; 
+        z-index: auto;
+        top: auto; 
         right: 0;
         background-color: rgb(153, 223, 245); 
-        overflow-x: hidden; 
-        padding-top: 20px;
+        overflow-x: visible; 
+        padding-top: auto;
     }
 
     
@@ -67,19 +86,37 @@
         font-weight:bold; 
     } 
     .body_sec { 
-        margin-left:20px; 
+        margin-left:20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+        margin-right: 160px  
     } 
+    
+    
+    .bg-image {
+        background-image: url("kursusepilt.jpg");
+        background-color: #cccccc;
+        height: 152px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
 </style> 
 </head>
-<body>
+<body div class="scroll">
 	
 
 
   
       
     <header> 
+        <div class="bg-image">
         <div class="head1">IT 2020 KURSUS</div> 
-        <div class="head2">Koduleht TÜ IT 2020 kursusele</div> 
+        <div class="head2">Koduleht TÜ IT 2020 kursusele</div>
+    </div> 
     </header> 
       
     <div class="menu"> 
@@ -88,20 +125,22 @@
         <a href="#galerii">GALERII</a> 
         <div class="menu-log"> 
             <a href="#">kui tahab siia midagi panna</a>
-            <div class="sidenav">
-                <a href="#">Floativ kalender</a>
-                <div>Kasulikud lingid:</div>
-                <a href="#">Link1</a>
-                <a href="#">Link2</a>
-                
-              </div>
+            
         </div> 
     </div> 
-    
+    <div class="sidenav">
+        
+        <iframe src="https://calendar.google.com/calendar/embed?height=200&amp;wkst=2&amp;bgcolor=%234285F4&amp;ctz=Europe%2FTallinn&amp;src=ZXQuZWUjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=OWR2aW04aW44ZmQ5a3FjMjBqY2RzbnYwbms1N2hpNDBAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%230B8043&amp;color=%239E69AF&amp;showTz=0&amp;showCalendars=0&amp;showPrint=0&amp;showTitle=0&amp;showTabs=0&amp;mode=AGENDA&amp;showDate=0&amp;showNav=0" style="border-width:0" width="160" height="200" frameborder="0" scrolling="no"></iframe>
+        <div>Kasulikud lingid:</div>
+        <a href="https://cs.ut.ee/reg">Registreerimine</a>
+        <div><a href="https://moodle.ut.ee/">Moodle</a></div>
+        
+    </div>
       
     <div class = "body_sec"> 
         <section id="Content"> 
-            <h3>Siia tuleb tutvustus</h3> 
+            <h3>Siia tuleb tutvustus, prg panin lic mahu tekitamiseks</h3>
+            <div class=body> Informaatika erialal omandatakse nii arvutitea­duse teoreetilised alused kui ka tugevad praktilised oskused. Õpe ei eelda eelteadmisi programmeerimisest, kuid samas leiab ka kõige nutikam olümpiaadikogemusega üliõpilane endale õppe­töö jooksul tõsiseid väljakutseid. Ained varieeruvad programmeerimiskeeltest tehisintellektini, matemaatikast keeletehnoloogiani. Õppekava kohustuslik osa keskendub eelkõige valdkonna baasteadmistele, mis annavad hea aluse kitsamate oskuste ja tehnoloogiate omandamiseks (näiteks programmeerimiskeel C++, pilvearvutused, arvutuslik neuroteadus jne), mida saab teha valikainete raames juba lähtuvalt enda huvidest.</div>
         </section> 
     </div> 
    
