@@ -3,10 +3,8 @@
 <head>
 <title>IT 2020</title>
 <style> 
-    html {
-        scroll-behavior: smooth;
-    }
-    div.scroll { 
+ 
+    /* div.scroll { 
         margin:4px, 4px; 
         padding:4px; 
         background-color: green; 
@@ -14,8 +12,8 @@
         height: 110px; 
         overflow-x: hidden; 
         overflow-y: auto; 
-        text-align:justify;
-    }
+        text-align:justify; */
+    /* } */
     .head1 { 
         font-size:40px; 
         color:navy; 
@@ -61,11 +59,11 @@
     .sidenav {
         height:auto;
         margin-top: auto;
-        width: 160px; 
+        width: 155px; 
         position: fixed; 
         z-index: auto;
         top: auto; 
-        right: 0;
+        right: 5px;
         background-color: rgb(153, 223, 245); 
         overflow-x: visible; 
         padding-top: auto;
@@ -74,13 +72,14 @@
     
     
     footer { 
-        width: 100%; 
+        /* width: 100%;  */
         bottom: 0px; 
         background-color:grey; 
         color: black; 
-        position: absolute; 
-        padding-top:20px; 
-        padding-bottom:40px; 
+        position: relative; 
+        padding-top:20px;
+        padding-left: 20px; 
+        padding-bottom:20px; 
         text-align:left; 
         font-size:10px; 
         font-weight:bold; 
@@ -103,11 +102,28 @@
         background-size: cover;
         position: relative;
     }
+    .scrolling-box {
+        
+        /* display: block; */
+        /* height: 200px; */
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        
+        /* width: 200px; */
+    }
+
+    section {
+        display: flex;
+        
+        height: 100%;
+    }
     
 </style> 
 </head>
-<body div class="scroll">
-	
+<!-- <body div class="scroll"> -->
+<body div class="scrolling-box">
+    
+<!-- <div class="scrolling-box">	 -->
 
 
   
@@ -138,9 +154,19 @@
     </div>
       
     <div class = "body_sec"> 
-        <section id="Content"> 
-            <h3>Siia tuleb tutvustus, prg panin lic mahu tekitamiseks</h3>
-            <div class=body> Informaatika erialal omandatakse nii arvutitea­duse teoreetilised alused kui ka tugevad praktilised oskused. Õpe ei eelda eelteadmisi programmeerimisest, kuid samas leiab ka kõige nutikam olümpiaadikogemusega üliõpilane endale õppe­töö jooksul tõsiseid väljakutseid. Ained varieeruvad programmeerimiskeeltest tehisintellektini, matemaatikast keeletehnoloogiani. Õppekava kohustuslik osa keskendub eelkõige valdkonna baasteadmistele, mis annavad hea aluse kitsamate oskuste ja tehnoloogiate omandamiseks (näiteks programmeerimiskeel C++, pilvearvutused, arvutuslik neuroteadus jne), mida saab teha valikainete raames juba lähtuvalt enda huvidest.</div>
+        <section id="Content">
+            <div class="body">
+                <h3>Siia tuleb tutvustus, prg panin lic mahu tekitamiseks</h3>
+                
+                Informaatika erialal omandatakse nii arvutitea­duse teoreetilised alused kui ka tugevad praktilised oskused. Õpe ei eelda eelteadmisi programmeerimisest, kuid samas leiab ka kõige nutikam olümpiaadikogemusega üliõpilane endale õppe­töö jooksul tõsiseid väljakutseid. Ained varieeruvad programmeerimiskeeltest tehisintellektini, matemaatikast keeletehnoloogiani. Õppekava kohustuslik osa keskendub eelkõige valdkonna baasteadmistele, mis annavad hea aluse kitsamate oskuste ja tehnoloogiate omandamiseks (näiteks programmeerimiskeel C++, pilvearvutused, arvutuslik neuroteadus jne), mida saab teha valikainete raames juba lähtuvalt enda huvidest.
+                <h3>Õppetöö</h3>
+                Arvutiteaduse instituudi traditsioonide hulka kuuluvad mitmed üliõpilasi kaasavad üritused. Iga aasta toimuvad instituudi päev, kus saab tutvuda uurimisrühmades tehtava tööga, ja Delta karjääripäev, kus on kohal suur hulk mõjukamaid Eestis tegutsevaid IT-ettevõtteid ja teisi tööandjaid. Instituut toetab ettevalmistust ja osalemist rahvusvahelistel võistlustel ning muu hulgas aitavad nõu ning jõuga kaasa ka teadustöötajad. Lisaks on instituudis vilgas tudengielu erialase tudengiseltsi näol, mis korraldab regulaarselt ühisüritusi, aga samas organiseerib ka mentorprogrammi esimese aasta ja vanemate üliõpilaste vahel.
+                Õppetöö toimub Tartu Ülikooli kõige modernsemas keskkonnas - Delta keskuses. Ainetes on täiendav e-õpe ja uusimad haridustehnoloogilised lahendused koos praktiliste ülesannete ja rühmatöödega. Kõik meie õppematerjalid on vabalt kättesaadavad veebist, loenguid filmitakse ja need on järelvaadatavad. Õppejõud hoolivad tudengisõbraliku keskkonna hoidmisest ning kursuseid arendatakse üliõpilastelt saadud tagasiside põhjal. Abi saab lisapraktikumide ja õppenõustamise kaudu.
+                Informaatika eriala lõpetajad on hinnatud eri rollides, nt tarkvaraarendaja, arhitekti või analüütikuna. IT-eriala vilistlasi vajatakse ka muudes valdkondades, kus just IT abil luuakse uusi läbimurdetehnoloogiaid.
+                <h2>Vilistlased</h2>
+                Meie lõpetajaid leiab töötamas kohtades nagu Skype, Playtech, Cybernetica, Facebook, Shazam ja Spotify, Google. Vilistlaste asutatud ettevõtete hulka kuuluvad TransferWise, Rogue Wave, Mobi, Fortumo, SaleMove, Plumbr ja Bolt. Äripäeva Eesti rikaste edetabelit 2015. aastal kroonis arvutiteaduse instituudi vilistlane Kristo Käärmann.
+                
+            </div>
         </section> 
     </div> 
    
@@ -160,4 +186,5 @@
 
     </footer>
 
+</body>
 </html>
