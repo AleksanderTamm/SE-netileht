@@ -3,9 +3,11 @@
 <!-- asjalik google kalendri link vaja tekitada/leida  -->
 <!-- pilte mida galeriisse lisada(äkki retsikaustast) -->
 <!-- Hindamisjuhendis oli midagi java kohta, seega kas keegi oskab seda?? -->
+<!-- sidenav bari peaks paigale panema(võin ise tegeleda) -->
 
 
 
+<!-- see on ss galerii leht -->
 
 
 <!DOCTYPE html>
@@ -64,11 +66,13 @@
         padding-top: auto;
     }
     footer { 
-        bottom: 0px; 
-        width: auto;
+        bottom: 0px;
+        /* muutsin */
+        width: 99%;
+
         background-color:grey; 
         color: black; 
-        position: relative; 
+        position: fixed; 
         padding-top:20px;
         padding-left: 20px; 
         padding-bottom:20px; 
@@ -99,6 +103,26 @@
         display: flex;
         height: 100%;
     }
+
+
+    /* siin ss ainult galerii style elemendid */
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+    }
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
     
 </style> 
 </head>
@@ -112,7 +136,7 @@
     </header> 
       
     <div class="menu"> 
-        <a href="#kodu">KODU</a> 
+        <a href="./netileht.html">KODU</a> 
         <a href="#uudised">UUDISED</a> 
         <a href="galerii.html">GALERII</a> 
         <div class="menu-log"> 
@@ -133,17 +157,26 @@
     <div class = "body_sec"> 
         <section id="Content">
             <div class="body">
-                <!-- esilehe tutvustus võiks olla läbimõeldud, pr panin suvalise teksti(ehk peab ära muutma) -->
-                <h3>Siia tuleb tutvustus, prg panin lic mahu tekitamiseks</h3>
-                
-                Informaatika erialal omandatakse nii arvutitea­duse teoreetilised alused kui ka tugevad praktilised oskused. Õpe ei eelda eelteadmisi programmeerimisest, kuid samas leiab ka kõige nutikam olümpiaadikogemusega üliõpilane endale õppe­töö jooksul tõsiseid väljakutseid. Ained varieeruvad programmeerimiskeeltest tehisintellektini, matemaatikast keeletehnoloogiani. Õppekava kohustuslik osa keskendub eelkõige valdkonna baasteadmistele, mis annavad hea aluse kitsamate oskuste ja tehnoloogiate omandamiseks (näiteks programmeerimiskeel C++, pilvearvutused, arvutuslik neuroteadus jne), mida saab teha valikainete raames juba lähtuvalt enda huvidest.
-                <h3>Õppetöö</h3>
-                Arvutiteaduse instituudi traditsioonide hulka kuuluvad mitmed üliõpilasi kaasavad üritused. Iga aasta toimuvad instituudi päev, kus saab tutvuda uurimisrühmades tehtava tööga, ja Delta karjääripäev, kus on kohal suur hulk mõjukamaid Eestis tegutsevaid IT-ettevõtteid ja teisi tööandjaid. Instituut toetab ettevalmistust ja osalemist rahvusvahelistel võistlustel ning muu hulgas aitavad nõu ning jõuga kaasa ka teadustöötajad. Lisaks on instituudis vilgas tudengielu erialase tudengiseltsi näol, mis korraldab regulaarselt ühisüritusi, aga samas organiseerib ka mentorprogrammi esimese aasta ja vanemate üliõpilaste vahel.
-                Õppetöö toimub Tartu Ülikooli kõige modernsemas keskkonnas - Delta keskuses. Ainetes on täiendav e-õpe ja uusimad haridustehnoloogilised lahendused koos praktiliste ülesannete ja rühmatöödega. Kõik meie õppematerjalid on vabalt kättesaadavad veebist, loenguid filmitakse ja need on järelvaadatavad. Õppejõud hoolivad tudengisõbraliku keskkonna hoidmisest ning kursuseid arendatakse üliõpilastelt saadud tagasiside põhjal. Abi saab lisapraktikumide ja õppenõustamise kaudu.
-                Informaatika eriala lõpetajad on hinnatud eri rollides, nt tarkvaraarendaja, arhitekti või analüütikuna. IT-eriala vilistlasi vajatakse ka muudes valdkondades, kus just IT abil luuakse uusi läbimurdetehnoloogiaid.
-                <h2>Vilistlased</h2>
-                Meie lõpetajaid leiab töötamas kohtades nagu Skype, Playtech, Cybernetica, Facebook, Shazam ja Spotify, Google. Vilistlaste asutatud ettevõtete hulka kuuluvad TransferWise, Rogue Wave, Mobi, Fortumo, SaleMove, Plumbr ja Bolt. Äripäeva Eesti rikaste edetabelit 2015. aastal kroonis arvutiteaduse instituudi vilistlane Kristo Käärmann.
-                
+              
+
+                <div class="gallery">
+                    <a target="_blank" href="kursusepilt.jpg">
+                      <img src="kursusepilt.jpg" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">Esimene kohtumine Pirogovi platsil</div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </section> 
     </div> 
