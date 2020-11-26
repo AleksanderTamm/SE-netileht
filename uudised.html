@@ -3,11 +3,9 @@
 <!-- asjalik google kalendri link vaja tekitada/leida  -->
 <!-- pilte mida galeriisse lisada(äkki retsikaustast) -->
 <!-- Hindamisjuhendis oli midagi java kohta, seega kas keegi oskab seda?? -->
-<!-- sidenav bari peaks paigale panema(võin ise tegeleda) -->
 
 
 
-<!-- see on ss galerii leht -->
 
 
 <!DOCTYPE html>
@@ -66,10 +64,8 @@
         padding-top: auto;
     }
     footer { 
-        bottom: 0px;
-        /* muutsin */
+        bottom: 0px; 
         width: 99%;
-
         background-color:grey; 
         color: black; 
         position: fixed; 
@@ -103,26 +99,6 @@
         display: flex;
         height: 100%;
     }
-
-
-    /* siin ss ainult galerii style elemendid */
-    div.gallery {
-        margin: 5px;
-        border: 1px solid #ccc;
-        float: left;
-        width: 180px;
-    }
-    div.gallery:hover {
-        border: 1px solid #777;
-    }
-    div.gallery img {
-        width: 100%;
-        height: auto;
-    }
-    div.desc {
-        padding: 15px;
-        text-align: center;
-    }
     
 </style> 
 </head>
@@ -136,7 +112,7 @@
     </header> 
       
     <div class="menu"> 
-        <a href="./netileht.html">KODU</a> 
+        <a href="netileht.html">KODU</a> 
         <a href="uudised.html">UUDISED</a> 
         <a href="galerii.html">GALERII</a> 
         <div class="menu-log"> 
@@ -157,25 +133,15 @@
     <div class = "body_sec"> 
         <section id="Content">
             <div class="body">
-              
-
-                <div class="gallery">
-                    <a target="_blank" href="kursusepilt.jpg">
-                      <img src="kursusepilt.jpg" alt="Cinque Terre" width="600" height="400">
-                    </a>
-                    <div class="desc">Esimene kohtumine Pirogovi platsil</div>
-                  </div>
-
-
-
-
-
-
-
-
-
-
-
+                
+                <div><a href="https://www.ut.ee/et/uudised/tartu-ulikooli-teadlased-pakuvad-konverentsil-lahendusi-toimetulekuks-koroonapandeemia">
+                <h3>Tartu Ülikooli teadlased pakuvad konverentsil lahendusi toimetulekuks koroonapandeemia tagajärgedega</h3></a></div>
+                26. ja 27. novembril korraldab Tartu Ülikool veebikonverentsi „Arukas kohanemine koroonaviirusega“, kus enam kui 50 teadlast kõigist ülikooli teadusvaldkondadest annavad ülevaate sellest, mida on aasta jooksul viiruse kohta teada saadud. Teadlaste kõrval astuvad konverentsil üles poliitikakujundajad, otsustajad ja eksperdid väljastpoolt Tartu Ülikooli, et mõtestada ühiskonna ootusi koroonaviirusega kohanemisel
+<!-- ma paneks nii uudised aga see väga basic viis -->
+                <div><a href="https://www.ut.ee/et/uudised/tartu-ulikooli-seireuuring-aitab-hinnata-viiruse-levikut-pidurdavate-meetmete-moju">
+                <h3> Tartu ülikooli seireuuring aitab hinnata viiruse levikut pidurdavate meetmete mõju</h3> </a></div>
+                Tartu Ülikooli teadlaste juhtimisel algab 26. novembril koroonaviiruse levimuse uuringu uus etapp. Selle eesmärk on teha kindlaks koroonaviiruse leviku ulatus täiskasvanud elanike hulgas ja hinnata selle muutust võrreldes kahe nädala taguse uuringuga. Samuti vaadeldakse uues etapis muutusi inimeste käitumismustris seoses valitsuse kehtestatud piirangumeetmetega.
+                
 
             </div>
         </section> 
