@@ -10,160 +10,96 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<title>IT 2020</title>
-<style>
- /* siit alla läheb kõik css faili(vist peaks) */
- .head1 {
-     font-size:40px;
-     color:white;
-     font-weight:bold;
- }
- .head1 span {
-   background-color:navy
- }
- .head2 {
-     color:white;
-     font-size:17px;
-     margin-bottom:15px;
- }
-    body {
-        margin: auto;
-        background-position:center;
-        background-size: contain;
-    }
-    .menu {
-        position: static;
-        top: 0;
-        background-color: #cccccc;
-        background-image: linear-gradient(navy, blue);
-        padding:10px 0px 10px 0px;
-        color:white;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-    .menu a {
-        float: left;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    .menu-log {
-        right: auto;
-        float: right;
-    }
-    .sidenav {
-        height:auto;
-        margin-top: auto;
-        width: 155px;
-        position: absolute;
-        z-index: auto;
-        top: auto;
-        right: 5px;
-        background-color: rgb(153, 223, 245);
-        overflow-x: visible;
-        padding-top: auto;
-    }
-    footer {
-        bottom: 0px;
-        width: auto;
-        background-color:grey;
-        color: black;
-        position: relative;
-        padding-top:20px;
-        padding-left: 20px;
-        padding-bottom:20px;
-        text-align:left;
-        font-size:10px;
-        font-weight:bold;
-    }
-    .body_sec {
-        margin-left:20px;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-right: 160px
-    }
-    .bg-image {
-        background-image: url("kursusepilt.jpg");
-        background-color: #cccccc;
-        height: 152px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-    .scrolling-box {
-        overflow-y: scroll;
-        scroll-behavior: smooth;
-    }
-    section {
-        display: flex;
-        height: 100%;
-    }
 
-</style>
+<head>
+    <title>IT 2020</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body div class="scrolling-box">
     <header>
-          <div class="bg-image">
-          <div class="head1""><span>IT 2020 KURSUS</span></div>
+        <div class="bg-image">
+            <div class="head1""><span>IT 2020 KURSUS</span></div>
       </div>
     </header>
 
-    <div class="menu">
-        <a href="netileht.html">KODU</a>
-        <a href="uudised.html">UUDISED</a>
-        <a href="galerii.html">GALERII</a>
-        <div class="menu-log">
-            <a href="tunniplaan.html">TUNNIPLAAN</a>
+    <div class=" menu">
+                <a href="netileht.html">KODU</a>
+                <a href="uudised.html">UUDISED</a>
+                <a href="galerii.html">GALERII</a>
+                <div class="menu-log">
+                    <a href="tunniplaan.html">TUNNIPLAAN</a>
 
-        </div>
-    </div>
-    <div class="sidenav">
-        <!-- prg lambine kalender(minu tunniplaan), võiks leida midagi asjalikku -->
-        <iframe src="https://calendar.google.com/calendar/embed?height=200&amp;wkst=2&amp;bgcolor=%234285F4&amp;ctz=Europe%2FTallinn&amp;src=Y2IyZW4waDN1bmhrNDJoZmZhZDQ1ODhsMGtvMzBzdGNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZWxicm5oZjNndjI3N2phb3V0aDQ1ZzRzcWhvZ21kbnRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZXQuZWUjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=b28zaTh0cDliOTdldXRmYWpoanRmNWFicGdoMWVhNDRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=dGtzNjgxdTdscWM3MmluaWRudnNwM3E2ZjRuOWhzcnRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=MXRxOGU5bjY4ZmFlaGFkczZpcGg4bHI3MG91ZW9uMXZAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%237986CB&amp;color=%23F09300&amp;color=%230B8043&amp;color=%23E67C73&amp;color=%23F6BF26&amp;color=%23D81B60&amp;showTitle=0&amp;mode=AGENDA&amp;showTz=0&amp;showCalendars=0&amp;showPrint=0&amp;showDate=0&amp;showNav=0&amp;showTabs=0" style="border:solid 1px #777" width="157" height="200" frameborder="0" scrolling="no"></iframe>
-        <!-- võiks lisada veel linke -->
-        <a href="https://cs.ut.ee/reg">Registreerimine</a>
-        <div><a href="https://moodle.ut.ee/">Moodle</a></div>
-        <div><a href="https://ois2.ut.ee/">ÕIS</a></div>
-    </div>
-
-    <div class = "body_sec">
-        <section id="Content">
-            <div class="body">
-                <!-- esilehe tutvustus võiks olla läbimõeldud, pr panin suvalise teksti(ehk peab ära muutma) -->
-                <h3>Siia tuleb tutvustus, prg panin lic mahu tekitamiseks</h3>
-
-                Informaatika erialal omandatakse nii arvutitea­duse teoreetilised alused kui ka tugevad praktilised oskused. Õpe ei eelda eelteadmisi programmeerimisest, kuid samas leiab ka kõige nutikam olümpiaadikogemusega üliõpilane endale õppe­töö jooksul tõsiseid väljakutseid. Ained varieeruvad programmeerimiskeeltest tehisintellektini, matemaatikast keeletehnoloogiani. Õppekava kohustuslik osa keskendub eelkõige valdkonna baasteadmistele, mis annavad hea aluse kitsamate oskuste ja tehnoloogiate omandamiseks (näiteks programmeerimiskeel C++, pilvearvutused, arvutuslik neuroteadus jne), mida saab teha valikainete raames juba lähtuvalt enda huvidest.
-                <h3>Õppetöö</h3>
-                Arvutiteaduse instituudi traditsioonide hulka kuuluvad mitmed üliõpilasi kaasavad üritused. Iga aasta toimuvad instituudi päev, kus saab tutvuda uurimisrühmades tehtava tööga, ja Delta karjääripäev, kus on kohal suur hulk mõjukamaid Eestis tegutsevaid IT-ettevõtteid ja teisi tööandjaid. Instituut toetab ettevalmistust ja osalemist rahvusvahelistel võistlustel ning muu hulgas aitavad nõu ning jõuga kaasa ka teadustöötajad. Lisaks on instituudis vilgas tudengielu erialase tudengiseltsi näol, mis korraldab regulaarselt ühisüritusi, aga samas organiseerib ka mentorprogrammi esimese aasta ja vanemate üliõpilaste vahel.
-                Õppetöö toimub Tartu Ülikooli kõige modernsemas keskkonnas - Delta keskuses. Ainetes on täiendav e-õpe ja uusimad haridustehnoloogilised lahendused koos praktiliste ülesannete ja rühmatöödega. Kõik meie õppematerjalid on vabalt kättesaadavad veebist, loenguid filmitakse ja need on järelvaadatavad. Õppejõud hoolivad tudengisõbraliku keskkonna hoidmisest ning kursuseid arendatakse üliõpilastelt saadud tagasiside põhjal. Abi saab lisapraktikumide ja õppenõustamise kaudu.
-                Informaatika eriala lõpetajad on hinnatud eri rollides, nt tarkvaraarendaja, arhitekti või analüütikuna. IT-eriala vilistlasi vajatakse ka muudes valdkondades, kus just IT abil luuakse uusi läbimurdetehnoloogiaid.
-                <h2>Vilistlased</h2>
-                Meie lõpetajaid leiab töötamas kohtades nagu Skype, Playtech, Cybernetica, Facebook, Shazam ja Spotify, Google. Vilistlaste asutatud ettevõtete hulka kuuluvad TransferWise, Rogue Wave, Mobi, Fortumo, SaleMove, Plumbr ja Bolt. Äripäeva Eesti rikaste edetabelit 2015. aastal kroonis arvutiteaduse instituudi vilistlane Kristo Käärmann.
-
+                </div>
             </div>
-        </section>
-    </div>
+            <div class="sidenav">
+                <!-- prg lambine kalender(minu tunniplaan), võiks leida midagi asjalikku -->
+                <iframe
+                    src="https://calendar.google.com/calendar/embed?height=200&amp;wkst=2&amp;bgcolor=%234285F4&amp;ctz=Europe%2FTallinn&amp;src=Y2IyZW4waDN1bmhrNDJoZmZhZDQ1ODhsMGtvMzBzdGNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZWxicm5oZjNndjI3N2phb3V0aDQ1ZzRzcWhvZ21kbnRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZXQuZWUjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=b28zaTh0cDliOTdldXRmYWpoanRmNWFicGdoMWVhNDRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=dGtzNjgxdTdscWM3MmluaWRudnNwM3E2ZjRuOWhzcnRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=MXRxOGU5bjY4ZmFlaGFkczZpcGg4bHI3MG91ZW9uMXZAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%237986CB&amp;color=%23F09300&amp;color=%230B8043&amp;color=%23E67C73&amp;color=%23F6BF26&amp;color=%23D81B60&amp;showTitle=0&amp;mode=AGENDA&amp;showTz=0&amp;showCalendars=0&amp;showPrint=0&amp;showDate=0&amp;showNav=0&amp;showTabs=0"
+                    style="border:solid 1px #777" width="157" height="200" frameborder="0" scrolling="no"></iframe>
+                <!-- võiks lisada veel linke -->
+                <a href="https://cs.ut.ee/reg">Registreerimine</a>
+                <div><a href="https://moodle.ut.ee/">Moodle</a></div>
+                <div><a href="https://ois2.ut.ee/">ÕIS</a></div>
+            </div>
 
-    <footer>
-        Lehe on loonud:
-         <div>Aleksander Tamm
-             <div>
-                Rudolf Raidma
-                 <div>
-                    Brandon Rauba
-                 </div>
-             </div>
-         </div>
+            <div class="body_sec">
+                <section id="Content">
+                    <div class="body">
+                        <!-- esilehe tutvustus võiks olla läbimõeldud, pr panin suvalise teksti(ehk peab ära muutma) -->
+                        <h3>Siia tuleb tutvustus, prg panin lic mahu tekitamiseks</h3>
+
+                        Informaatika erialal omandatakse nii arvutitea­duse teoreetilised alused kui ka tugevad
+                        praktilised oskused. Õpe ei eelda eelteadmisi programmeerimisest, kuid samas leiab ka kõige
+                        nutikam olümpiaadikogemusega üliõpilane endale õppe­töö jooksul tõsiseid väljakutseid. Ained
+                        varieeruvad programmeerimiskeeltest tehisintellektini, matemaatikast keeletehnoloogiani.
+                        Õppekava kohustuslik osa keskendub eelkõige valdkonna baasteadmistele, mis annavad hea aluse
+                        kitsamate oskuste ja tehnoloogiate omandamiseks (näiteks programmeerimiskeel C++,
+                        pilvearvutused, arvutuslik neuroteadus jne), mida saab teha valikainete raames juba lähtuvalt
+                        enda huvidest.
+                        <h3>Õppetöö</h3>
+                        Arvutiteaduse instituudi traditsioonide hulka kuuluvad mitmed üliõpilasi kaasavad üritused. Iga
+                        aasta toimuvad instituudi päev, kus saab tutvuda uurimisrühmades tehtava tööga, ja Delta
+                        karjääripäev, kus on kohal suur hulk mõjukamaid Eestis tegutsevaid IT-ettevõtteid ja teisi
+                        tööandjaid. Instituut toetab ettevalmistust ja osalemist rahvusvahelistel võistlustel ning muu
+                        hulgas aitavad nõu ning jõuga kaasa ka teadustöötajad. Lisaks on instituudis vilgas tudengielu
+                        erialase tudengiseltsi näol, mis korraldab regulaarselt ühisüritusi, aga samas organiseerib ka
+                        mentorprogrammi esimese aasta ja vanemate üliõpilaste vahel.
+                        Õppetöö toimub Tartu Ülikooli kõige modernsemas keskkonnas - Delta keskuses. Ainetes on täiendav
+                        e-õpe ja uusimad haridustehnoloogilised lahendused koos praktiliste ülesannete ja rühmatöödega.
+                        Kõik meie õppematerjalid on vabalt kättesaadavad veebist, loenguid filmitakse ja need on
+                        järelvaadatavad. Õppejõud hoolivad tudengisõbraliku keskkonna hoidmisest ning kursuseid
+                        arendatakse üliõpilastelt saadud tagasiside põhjal. Abi saab lisapraktikumide ja õppenõustamise
+                        kaudu.
+                        Informaatika eriala lõpetajad on hinnatud eri rollides, nt tarkvaraarendaja, arhitekti või
+                        analüütikuna. IT-eriala vilistlasi vajatakse ka muudes valdkondades, kus just IT abil luuakse
+                        uusi läbimurdetehnoloogiaid.
+                        <h2>Vilistlased</h2>
+                        Meie lõpetajaid leiab töötamas kohtades nagu Skype, Playtech, Cybernetica, Facebook, Shazam ja
+                        Spotify, Google. Vilistlaste asutatud ettevõtete hulka kuuluvad TransferWise, Rogue Wave, Mobi,
+                        Fortumo, SaleMove, Plumbr ja Bolt. Äripäeva Eesti rikaste edetabelit 2015. aastal kroonis
+                        arvutiteaduse instituudi vilistlane Kristo Käärmann.
+
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+                Lehe on loonud:
+                <div>Aleksander Tamm
+                    <div>
+                        Rudolf Raidma
+                        <div>
+                            Brandon Rauba
+                        </div>
+                    </div>
+                </div>
 
 
 
 
-    </footer>
+            </footer>
 
 </body>
+
 </html>
