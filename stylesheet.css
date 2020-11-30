@@ -70,7 +70,8 @@
        margin-left:20px;
        margin-top: auto;
        margin-bottom: auto;
-       margin-right: 160px
+       margin-right: 160px;
+       padding-bottom: 20px;
    }
    .bg-image {
        background-image: url("kursusepilt.jpg");
@@ -89,10 +90,3 @@
        display: flex;
        height: 100%;
    }
-   /* iframe{
-    border:solid 1px #777;
-    width: 153; 
-    height: 200; 
-    border: 0;
-    overflow: no;
-   }  */
