@@ -1,5 +1,5 @@
 
-/* siia stiilid */
+/* Stiilielemendid */
 .head1 {
     font-size:40px;
     color:white;
@@ -47,8 +47,9 @@
        position: absolute;
        z-index: auto;
        top: auto;
-       right: 5px;
-       background-color: rgb(153, 223, 245);
+       right: 0px;
+       background-color: blue;
+       background-image: linear-gradient( blue, #4B8BFF);
        overflow-x: visible;
        padding-top: auto;
    }
