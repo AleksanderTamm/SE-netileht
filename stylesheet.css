@@ -55,11 +55,9 @@
    }
    footer {
        bottom: 0px;
-       /* width: 99%; */
        width: auto;
        background-color:grey;
        color: black;
-       /* position: fixed;  */
        position: relative;
        padding-top:20px;
        padding-left: 20px;
